@@ -1,4 +1,6 @@
 zstyle :compinstall filename $ZSHDOTDIR/.zshrc
+fpath=(${ASDF_DIR}/completions ${ZDOTDIR}/completions $fpath)
+
 autoload -Uz compinit; compinit
 
 setopt menucomplete
