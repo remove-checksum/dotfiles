@@ -25,11 +25,13 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE="$ZDOTDIR/.zsh_history"
 
-alias pretty_path='echo "${PATH//:/$\n}"'
+alias show_path='echo "${PATH//:/$\n}"'
+alias ls="ls --color=auto -1"
 alias ll="ls -alh --block-size=M"
 alias mc="mc -u -X"
 alias v="vim"
 alias e="vim"
+alias wsopen="wslview "
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
@@ -41,6 +43,8 @@ export LIBGL_ALWAYS_INDIRECT=1
 if [[ -f ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] ; then
     source ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # tabtab source for packages
 # uninstall by removing these lines
