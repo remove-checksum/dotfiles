@@ -15,10 +15,10 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # asdf version manager
-. "$HOME/.asdf/asdf.sh"
+. "/opt/asdf-vm/asdf.sh"
 
-# Cargo
-. "$HOME/.cargo/env"
+## Cargo
+#. "$HOME/.cargo/env"
 
 # nvim lsp-servers
 if [ -d "$HOME/.local/bin" ] ; then
